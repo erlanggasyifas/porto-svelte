@@ -46,7 +46,6 @@
 	  position: fixed;
 	  bottom: 20px;
 	  right: 20px;
-	  background-color: #4A90E2;
 	  color: white;
 	  padding: 10px 15px;
 	  border-radius: 50%;
@@ -76,7 +75,7 @@
   
   <!-- Scroll to Top Button -->
   {#if isButtonVisible}
-	<button class="scroll-to-top" on:click={scrollToTop}>
+	<button class="scroll-to-top bg-indigo-500" on:click={scrollToTop}>
 	  &#8679;
 	</button>
   {/if}

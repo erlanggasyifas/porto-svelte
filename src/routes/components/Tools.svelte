@@ -19,13 +19,13 @@
   <style>
     @media (max-width: 640px) {
       .card-title {
-        font-size: 0.875rem; /* Adjusted font size for mobile */
+        font-size: 0.875rem; 
       }
       .card-type {
-        font-size: 0.75rem; /* Smaller font size for type on mobile */
+        font-size: 0.75rem; 
       }
       .card-image {
-        height: 4rem; /* Smaller image size on mobile */
+        height: 4rem;
       }
     }
   </style>
