@@ -31,13 +31,13 @@
   </style>
   
   <div class="bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
-      <h1 class="text-3xl lg:text-4xl font-bold pb-10 text-black text-center break-words overflow-hidden w-full lg:w-auto lg:pb-10 pt-4" data-aos="fade-up">
+    <div class="container mx-auto px-4 py-20">
+      <h1 class="text-3xl lg:text-4xl font-bold pb-10 text-black text-center break-words overflow-hidden w-full lg:w-auto lg:pb-20 pt-4" data-aos="fade-up">
         Skill and Tools
       </h1>
-      <div class="grid grid-cols-1 grid-cols-2 lg:grid-cols-6 gap-4 mb-12" data-aos="zoom-in">
+      <div class="grid grid-cols-1 grid-cols-2 lg:grid-cols-6 gap-4 mb-12">
         {#each cards as card (card.id)}
-          <div class="bg-white p-3 shadow-md flex items-center">
+          <div class="bg-white p-3 shadow-md flex items-center" data-aos="zoom-in">
             <img src={card.image} alt={card.title} class="card-image lg:h-20 p-3 object-cover mr-4"/>
             <div class="flex flex-col justify-between">
               <h3 class="card-title text-lg lg:text-xl font-bold">{card.title}</h3>

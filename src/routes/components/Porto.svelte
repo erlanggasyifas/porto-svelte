@@ -56,7 +56,7 @@
 </style>
 
 <div class="bg-indigo-500">
-  <div class="container mx-auto py-8">
+  <div class="container mx-auto py-8 pb-20">
     <h1 class="text-3xl lg:text-4xl font-bold pb-10 text-white text-center break-words overflow-hidden w-full lg:w-auto lg:pb-10 pt-4" data-aos="fade-up">
       My Recent Portofolio
     </h1>
