@@ -1,62 +1,27 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-		<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-			Button
-		  </button>
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+	import '../app.css';
+	import { onMount } from 'svelte';
+	import Navbar from './components/Navbar.svelte';
+	import Home from './components/Home.svelte';
+	import About from './components/About.svelte';
+	import Tools from './components/Tools.svelte';
+	import Porto from './components/Porto.svelte';
+	import Footer from './components/Footbar.svelte';
+	
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
+	
+	onMount(() => {
+	  AOS.init({
+		duration: 1000, // duration of animation
+		once: true, // whether animation should happen only once
+	  });
+	});
+  </script>
+  
+  <Navbar />
+  <Home />
+  <Porto />
+  <Tools />
+  <Footer />
+  
